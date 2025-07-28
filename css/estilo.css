@@ -35,3 +35,120 @@
 
 /* NÃO ALTERE DAQUI PRA CIMA */
 /* ESCREVA SEU CÓDIGO ABAIXO */
+/* ======= Botões Superiores ======= */
+.top-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.top-buttons button {
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* ======= Menu Bar (Layout 1) ======= */
+.menu-bar {
+  background: #888;
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-bar button {
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+
+/* ======= Card Layout (Layout 1) ======= */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.card {
+  background: #bbb;
+  padding: 20px;
+  width: 30%;
+}
+
+.card h3 {
+  background: #666;
+  color: black;
+  padding: 10px;
+}
+
+/* ======= Footer (Layout 1) ======= */
+.footer {
+  background: #555;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  color: white;
+}
+
+/* ======= Imagem Central com Xadrez (Layout 2) ======= */
+.image-placeholder {
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  background-image: 
+    linear-gradient(45deg, #888 25%, transparent 25%), 
+    linear-gradient(-45deg, #888 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #888 75%),
+    linear-gradient(-45deg, transparent 75%, #888 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+/* ======= Grid Layout (Layout 3) ======= */
+.layout-grid {
+  display: grid;
+  grid-template-areas: 
+    "cabecalho cabecalho menu"
+    "artigo1 artigo2 menu"
+    "rodape rodape rodape";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  margin: 20px;
+}
+
+/* Grid Items */
+.cabecalho {
+  grid-area: cabecalho;
+  background: #ccc;
+  padding: 20px;
+}
+
+.menu {
+  grid-area: menu;
+  background: #888;
+  padding: 20px;
+}
+
+.artigo:nth-child(3) {
+  grid-area: artigo1;
+  background: #aaa;
+  padding: 20px;
+}
+
+.artigo:nth-child(4) {
+  grid-area: artigo2;
+  background: #999;
+  padding: 20px;
+}
+
+.rodape {
+  grid-area: rodape;
+  background: #666;
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
